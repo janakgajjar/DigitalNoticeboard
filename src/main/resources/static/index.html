@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ડિજિટલ નોટિસ બોર્ડ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ડિજિટલ નોટિસ બોર્ડ</h1>
+    </header>
+
+    <main>
+        <section class="admin-panel">
+            <h2>નવી નોટિસ ઉમેરો</h2>
+            <form id="noticeForm">
+                <div class="form-group">
+                    <label for="title">ટાઇટલ:</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">વિગતો:</label>
+                    <textarea id="content" rows="4" required></textarea>
+                </div>
+                <button type="submit">નોટિસ પોસ્ટ કરો</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="notice-area">
+            <h2>તાજી નોટિસો</h2>
+            <div id="notice-container">
+                <p>નોટિસ લોડ થઈ રહી છે...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
